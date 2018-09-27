@@ -16,9 +16,11 @@ while [ $lettre != q ]; do
 	echo ""
 	read -p "Entrez une lettre : " lettre
 	
-	if [[ $lettre
+	if [[ $lettre = d ]];then
+		read -p "quel mot? : " mot
+		./exercice1.sh $mot
+		read texte
+	fi
 done
 
-if 
-ls=`./exercice1.sh` 
 
